@@ -11,7 +11,19 @@ typedef pair<int,int> pii;
 typedef pair<ll,ll> pll;
 
 void test(int tc){
-    
+    int n,x; cin >> n >> x;
+    map<int,int> freq;
+    int cnt = n;    
+    for(int i = 0; i < n; ++i){
+        int tmp; cin >> tmp;
+        if(freq.count(tmp/x)){
+            cnt -= 2;
+            freq[tmp/x]--;
+        }else{
+            freq[tmp]++;
+        }
+    }
+    cout << cnt close 
 }
 
 int main() {
@@ -22,7 +34,7 @@ int main() {
     // freopen("./error.txt",  "w", stderr);
 #endif
     int testcase = 1;
-    // cin >> testcase;
+    cin >> testcase;
     for (int tc = 0; tc < testcase; tc++) {
         test(tc);
     }
