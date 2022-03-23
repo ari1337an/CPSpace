@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "all(x)=(x).begin(),(x).end()",
+                "MOD=1000000007",
+                "case(tc)=cout << \"Case \" << tc << \": \";",
+                "close=<< \"\\n\";"
+            ],
+            "cStandard": "c17",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerPath": "C:/Programs/mingw32/bin/g++.exe",
+            "compilerArgs": [
+                "-Dnecromancer"
+            ],
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+} 
